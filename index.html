@@ -320,6 +320,19 @@
                         
                         <div id="hero-container" class="w-full"></div>
                         
+                        <!-- Mobile GeForce NOW CTA -->
+                        <a href="#" class="lg:hidden block bg-gradient-to-br from-[#76B900]/20 to-[#0a0a0a] border border-nvidia-green/50 rounded-2xl p-6 group hover:shadow-[0_0_20px_rgba(118,185,0,0.15)] transition-all overflow-hidden relative mt-2 mb-4">
+                            <div class="absolute -right-6 -bottom-6 opacity-20 group-hover:scale-110 transition-transform duration-700">
+                                <svg width="120" height="120" viewBox="0 0 24 24" fill="#76B900"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.583c5.2 0 9.417 4.217 9.417 9.417s-4.217 9.417-9.417 9.417S2.583 17.2 2.583 12 6.8 2.583 12 2.583zm-2.5 4.5v9.834h5V7.083h-5z"/></svg>
+                            </div>
+                            <span class="bg-nvidia-green text-black text-[10px] font-extrabold px-2 py-1 rounded uppercase tracking-wide mb-3 inline-block relative z-10">Premium'a Geç</span>
+                            <h4 class="text-white font-bold text-xl mb-1 relative z-10 group-hover:text-nvidia-green transition-colors">GeForce NOW Paketleri</h4>
+                            <p class="text-sm text-gray-300 mb-4 relative z-10 leading-relaxed">Donanım sınırlarını kaldır! RTX gücüyle binlerce oyunu en yüksek kalitede oyna.</p>
+                            <span class="text-nvidia-green text-sm font-bold flex items-center gap-2 relative z-10">
+                                Paketleri İncele <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </span>
+                        </a>
+
                         <div>
                             <div class="flex items-center justify-between mb-6 border-b border-gameplus-border pb-4">
                                 <h3 class="text-2xl font-bold text-white flex items-center gap-3">
@@ -341,7 +354,7 @@
                     <div class="lg:col-span-4 flex flex-col gap-6 lg:sticky lg:top-24 h-max">
                         
                         <!-- GeForce NOW CTA -->
-                        <a href="#" class="block bg-gradient-to-br from-[#76B900]/20 to-[#0a0a0a] border border-nvidia-green/50 rounded-2xl p-6 group hover:shadow-[0_0_20px_rgba(118,185,0,0.15)] transition-all overflow-hidden relative">
+                        <a href="#" class="hidden lg:block bg-gradient-to-br from-[#76B900]/20 to-[#0a0a0a] border border-nvidia-green/50 rounded-2xl p-6 group hover:shadow-[0_0_20px_rgba(118,185,0,0.15)] transition-all overflow-hidden relative">
                             <div class="absolute -right-6 -bottom-6 opacity-20 group-hover:scale-110 transition-transform duration-700">
                                 <svg width="120" height="120" viewBox="0 0 24 24" fill="#76B900"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.583c5.2 0 9.417 4.217 9.417 9.417s-4.217 9.417-9.417 9.417S2.583 17.2 2.583 12 6.8 2.583 12 2.583zm-2.5 4.5v9.834h5V7.083h-5z"/></svg>
                             </div>
@@ -471,7 +484,7 @@
                         </div>
 
                         <div class="w-full aspect-video rounded-2xl overflow-hidden mb-10 border border-gameplus-border shadow-lg relative bg-black">
-                            <img id="detail-image" src="" alt="Kapak Görseli" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'" class="w-full h-full object-cover object-center block" loading="lazy">
+                            <img id="detail-image" src="" alt="Kapak Görseli" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'" class="w-full h-full object-contain object-center block" loading="lazy">
                         </div>
 
                         <article id="detail-content" class="article-content max-w-none">
@@ -490,12 +503,8 @@
 
                             <div class="bg-gameplus-panel border border-gameplus-border rounded-2xl p-6">
                                 <h4 class="text-lg font-bold text-white mb-4 border-b border-gameplus-border pb-3">Kategorileri Keşfet</h4>
-                                <div class="flex flex-col gap-3">
-                                    <a href="#" onclick="filterPosts('İncelemeler'); goToHome(event)" class="text-sm text-gray-300 hover:text-gameplus-yellow hover:translate-x-1 transition-all flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> İncelemeler</a>
-                                    <a href="#" onclick="filterPosts('Rehberler'); goToHome(event)" class="text-sm text-gray-300 hover:text-gameplus-yellow hover:translate-x-1 transition-all flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-500"></div> Rehberler</a>
-                                    <a href="#" onclick="filterPosts('Oyun Haberleri'); goToHome(event)" class="text-sm text-gray-300 hover:text-gameplus-yellow hover:translate-x-1 transition-all flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-red-500"></div> Oyun Haberleri</a>
-                                    <a href="#" onclick="filterPosts('GFN Thursday'); goToHome(event)" class="text-sm text-gray-300 hover:text-gameplus-yellow hover:translate-x-1 transition-all flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-nvidia-green"></div> GFN Thursday</a>
-                                    <a href="#" onclick="filterPosts('Oyun Önerisi'); goToHome(event)" class="text-sm text-gray-300 hover:text-gameplus-yellow hover:translate-x-1 transition-all flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-gameplus-yellow"></div> Oyun Önerisi</a>
+                                <div id="detail-categories-container" class="flex flex-col gap-5">
+                                    <!-- Injected dynamically -->
                                 </div>
                             </div>
                         </div>
@@ -707,7 +716,7 @@
             results.innerHTML = matches.map(p => `
                 <a href="#" onclick="goToArticle(${p.id}, event); toggleSearch()" class="flex items-center gap-4 px-6 py-4 hover:bg-[#1a1a1a] transition-colors border-b border-gameplus-border/50 last:border-0 group">
                     <div class="w-16 h-12 rounded-lg overflow-hidden bg-black flex-shrink-0 border border-[#333]">
-                        <img src="${p.image}" alt="" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://placehold.co/100x100/1a1a1a/FFC516?text=+'">
+                        <img src="${p.image}" alt="" class="w-full h-full object-contain" loading="lazy" onerror="this.src='https://placehold.co/100x100/1a1a1a/FFC516?text=+'">
                     </div>
                     <div class="flex-1 min-w-0">
                         <span class="text-[10px] font-bold uppercase tracking-wider ${categoryStyles[p.category]?.replace('bg-', 'text-').split(' ')[0] || 'text-gray-400'}">${p.category}</span>
@@ -837,7 +846,7 @@
             if (postsToRender.length === 0) {
                 heroContainer.innerHTML = `
                     <div class="text-center py-16 bg-gameplus-panel rounded-2xl border border-gameplus-border">
-                        <svg class="w-16 h-16 text-gray-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                        <svg class="w-16 h-16 text-gray-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
                         <p class="text-gray-400 text-lg font-medium">Bu kategoride henüz yazı bulunmuyor.</p>
                     </div>`;
                 return;
@@ -848,7 +857,7 @@
                 heroContainer.innerHTML = `
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[400px]">
                         <a href="#" onclick="goToArticle(${bigPost.id}, event)" class="md:col-span-2 group relative rounded-2xl overflow-hidden shadow-xl h-[300px] md:h-full block border border-[#333] bg-black">
-                            <img src="${bigPost.image}" alt="${bigPost.title}" class="w-full h-full object-cover object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
+                            <img src="${bigPost.image}" alt="${bigPost.title}" class="w-full h-full object-contain object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
                             <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 w-full p-6 md:p-8">
                                 <span class="${categoryStyles[bigPost.category] || 'bg-gray-700 text-white'} px-3 py-1 rounded text-[10px] md:text-xs font-bold uppercase tracking-wider mb-3 inline-block">${bigPost.category}</span>
@@ -858,7 +867,7 @@
                         </a>
                         <div class="md:col-span-1 flex flex-col gap-4 h-full">
                             <a href="#" onclick="goToArticle(${smallPost1.id}, event)" class="group relative rounded-2xl overflow-hidden shadow-lg h-[200px] md:flex-1 block border border-[#333] bg-black">
-                                <img src="${smallPost1.image}" alt="${smallPost1.title}" class="w-full h-full object-cover object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/400x250/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
+                                <img src="${smallPost1.image}" alt="${smallPost1.title}" class="w-full h-full object-contain object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/400x250/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
                                 <div class="absolute bottom-0 left-0 w-full p-5">
                                     <span class="${categoryStyles[smallPost1.category] || 'bg-gray-700 text-white'} px-2 py-0.5 rounded text-[10px] font-bold uppercase mb-2 inline-block">${smallPost1.category}</span>
@@ -866,7 +875,7 @@
                                 </div>
                             </a>
                             <a href="#" onclick="goToArticle(${smallPost2.id}, event)" class="group relative rounded-2xl overflow-hidden shadow-lg h-[200px] md:flex-1 block border border-[#333] bg-black">
-                                <img src="${smallPost2.image}" alt="${smallPost2.title}" class="w-full h-full object-cover object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/400x250/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
+                                <img src="${smallPost2.image}" alt="${smallPost2.title}" class="w-full h-full object-contain object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/400x250/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
                                 <div class="absolute bottom-0 left-0 w-full p-5">
                                     <span class="${categoryStyles[smallPost2.category] || 'bg-gray-700 text-white'} px-2 py-0.5 rounded text-[10px] font-bold uppercase mb-2 inline-block">${smallPost2.category}</span>
@@ -880,7 +889,7 @@
                 const bigPost = postsToRender[0];
                 heroContainer.innerHTML = `
                     <a href="#" onclick="goToArticle(${bigPost.id}, event)" class="group relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-[#333] h-[350px] md:h-[400px] block w-full bg-black border border-[#333]">
-                        <img src="${bigPost.image}" alt="${bigPost.title}" class="w-full h-full object-cover object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
+                        <img src="${bigPost.image}" alt="${bigPost.title}" class="w-full h-full object-contain object-center img-zoom block" loading="lazy" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 w-full p-6 md:p-10">
                             <div class="flex items-center gap-3 mb-4">
@@ -1039,6 +1048,32 @@
             // Update page title
             document.title = `${post.title} | GAME+ Blog`;
 
+            // Prepare Prev/Next Links
+            const currentIndex = blogPosts.findIndex(p => p.id === id);
+            const prevPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
+            const nextPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
+            
+            let navHTML = `<div class="flex flex-col sm:flex-row justify-between gap-4 mt-12 pt-8 border-t border-[#333]">`;
+            if (prevPost) {
+                navHTML += `
+                    <a href="#" onclick="goToArticle(${prevPost.id}, event)" class="flex-1 group p-5 border border-[#333] rounded-xl hover:border-gameplus-yellow/50 bg-[#111] transition-all flex flex-col justify-center">
+                        <span class="text-xs text-gray-500 uppercase tracking-wider mb-2 block group-hover:text-gameplus-yellow transition-colors">&larr; Önceki Yazı</span>
+                        <h4 class="text-sm text-gray-200 font-semibold line-clamp-2">${prevPost.title}</h4>
+                    </a>`;
+            } else {
+                navHTML += `<div class="flex-1 hidden sm:block"></div>`;
+            }
+            if (nextPost) {
+                navHTML += `
+                    <a href="#" onclick="goToArticle(${nextPost.id}, event)" class="flex-1 group p-5 border border-[#333] rounded-xl hover:border-gameplus-yellow/50 bg-[#111] transition-all flex flex-col justify-center text-right">
+                        <span class="text-xs text-gray-500 uppercase tracking-wider mb-2 block group-hover:text-gameplus-yellow transition-colors">Sonraki Yazı &rarr;</span>
+                        <h4 class="text-sm text-gray-200 font-semibold line-clamp-2">${nextPost.title}</h4>
+                    </a>`;
+            } else {
+                navHTML += `<div class="flex-1 hidden sm:block"></div>`;
+            }
+            navHTML += `</div>`;
+
             document.getElementById('detail-content').innerHTML = `
                 <div class="lg:hidden w-full bg-gradient-to-r from-[#76B900]/20 to-[#111] border border-nvidia-green/40 rounded-xl p-5 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left mt-2">
                     <div>
@@ -1054,7 +1089,7 @@
                 <h2>Neden Denemelisiniz?</h2>
                 <p>Gelişmiş grafikleri, sürükleyici dünyası ve pürüzsüz performansı sayesinde ${post.category} türünün en iyi örneklerinden birini inceliyoruz. Arkadaşlarınızla veya tek başınıza saatlerce sürecek bir maceraya hazır olun.</p>
                 <div class="w-full aspect-[16/9] rounded-xl overflow-hidden my-8 border border-[#333] bg-black">
-                    <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover object-center block" loading="lazy" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
+                    <img src="${post.image}" alt="${post.title}" class="w-full h-full object-contain object-center block" loading="lazy" onerror="this.src='https://placehold.co/800x450/1a1a1a/FFC516?text=Görsel+Bulunamadı'">
                 </div>
                 <h2>Bulutta Sınır Yok!</h2>
                 <ul>
@@ -1064,6 +1099,7 @@
                 </ul>
                 <blockquote>GeForce NOW ile oyun dünyasına erişmek hiç bu kadar kolay olmamıştı. Binlerce oyun, tek bir tıklama uzağınızda.</blockquote>
                 <p>Oyun dünyasındaki en son güncellemeleri takip etmek için Blogumuzu izlemeye devam edin. Şimdiden iyi eğlenceler!</p>
+                ${navHTML}
             `;
 
             // Related: prefer same category, then fill from others
@@ -1075,17 +1111,47 @@
             relatedContainer.innerHTML = '';
             related.forEach((relPost, idx) => {
                 relatedContainer.insertAdjacentHTML('beforeend', `
-                    <a href="#" onclick="goToArticle(${relPost.id}, event)" class="group flex gap-4 items-center ${idx > 0 ? 'pt-4 border-t border-[#222]' : ''}">
-                        <div class="w-24 h-16 rounded-md overflow-hidden bg-black flex-shrink-0 border border-[#333]">
+                    <a href="#" onclick="goToArticle(${relPost.id}, event)" class="group flex gap-3 items-center ${idx > 0 ? 'pt-4 border-t border-[#222]' : ''}">
+                        <div class="w-20 h-14 rounded-md overflow-hidden bg-black flex-shrink-0 border border-[#333]">
                             <img src="${relPost.image}" alt="${relPost.title}" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 block" loading="lazy" onerror="this.src='https://placehold.co/300x200/1a1a1a/FFC516?text=Game+'">
                         </div>
                         <div class="flex-1">
-                            <h5 class="text-[13px] font-semibold text-gray-200 group-hover:text-gameplus-yellow transition-colors line-clamp-2 leading-tight">${relPost.title}</h5>
+                            <h5 class="text-xs font-semibold text-gray-200 group-hover:text-gameplus-yellow transition-colors line-clamp-3 leading-snug">${relPost.title}</h5>
                             <span class="text-[10px] text-gray-500 mt-1 block">${relPost.date}</span>
                         </div>
                     </a>
                 `);
             });
+
+            // Populate Category Discover
+            const categoryDiscoverContainer = document.getElementById('detail-categories-container');
+            if (categoryDiscoverContainer) {
+                const catsToDiscover = ["GFN Thursday", "İncelemeler", "Rehberler", "Oyun Haberleri", "Oyun Önerisi"];
+                categoryDiscoverContainer.innerHTML = '';
+                catsToDiscover.forEach(cat => {
+                    let latestPost = blogPosts.find(p => p.category === cat && p.id !== id);
+                    if (!latestPost) latestPost = blogPosts.find(p => p.category === cat);
+                    
+                    if (latestPost) {
+                        const catColorClass = categoryStyles[latestPost.category]?.replace('bg-', 'text-').split(' ')[0] || 'text-gray-400';
+                        categoryDiscoverContainer.insertAdjacentHTML('beforeend', `
+                            <div class="pt-4 border-t border-[#222] first:border-0 first:pt-0 flex flex-col gap-1.5">
+                                <a href="#" onclick="filterPosts('${latestPost.category}'); goToHome(event)" class="text-[10px] font-bold uppercase tracking-wider ${catColorClass} hover:underline w-fit block">
+                                    ${latestPost.category}
+                                </a>
+                                <a href="#" onclick="goToArticle(${latestPost.id}, event)" class="group flex gap-3 items-center">
+                                    <div class="w-20 h-14 rounded-md overflow-hidden bg-black flex-shrink-0 border border-[#333]">
+                                        <img src="${latestPost.image}" alt="${latestPost.title}" class="w-full h-full object-contain object-center group-hover:scale-110 transition-transform duration-500 block" loading="lazy" onerror="this.src='https://placehold.co/300x200/1a1a1a/FFC516?text=Game+'">
+                                    </div>
+                                    <h5 class="text-xs font-semibold text-gray-200 group-hover:text-gameplus-yellow transition-colors line-clamp-3 leading-snug">
+                                        ${latestPost.title}
+                                    </h5>
+                                </a>
+                            </div>
+                        `);
+                    }
+                });
+            }
 
             document.getElementById('view-home').classList.add('hidden');
             const detailView = document.getElementById('view-detail');
